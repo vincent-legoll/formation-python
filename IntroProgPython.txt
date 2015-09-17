@@ -1,6 +1,6 @@
 Introduction à la Programmation Python
 
-#. Programmation
+1. Programmation
 ================
 
 Qu'est-ce que c'est ?
@@ -12,7 +12,7 @@ Qu'est-ce que c'est ?
   texte structuré : suites logiques de phrases organisées pour exprimmer
   la recette
 
-#. Historique
+2. Historique
 =============
 
 Guido van Rossum (hollandais), a créé ce langage en 1991
@@ -36,16 +36,16 @@ science
 
 NumPy, SciPy, Matplotlib, BioPython
 
-#. Contexte
+3. Contexte
 ===========
 
-#. Documentation
+4. Documentation
 ================
 
 - python.org (doc, faq, stdlib, tuto, etc...)
 - stackoverflow
 
-#. Langage Python et sa Syntaxe
+5. Langage Python et sa Syntaxe
 ===============================
 
 variables
@@ -188,7 +188,7 @@ plus loin encore
 - pyopencl, pycuda, etc...: calculs GPGPU
 - beaucoup de librairies C, C++ ou autres sont accessibles en python
 
-#. Bonnes Pratiques
+6. Bonnes Pratiques
 ===================
 
 - IDE: pydev
@@ -199,7 +199,7 @@ plus loin encore
 - tox
 - virtualenv
 
-#. Monty Python
+7. Monty Python
 ===============
 
 Et maintenant quelque chose de complètement différent
@@ -209,7 +209,7 @@ Brazil
 Perroquet mort
 Chevalier qui dit "Ni"
 
-#. Exercices
+8. Exercices
 ============
 
 numeric
@@ -258,14 +258,14 @@ algorithmes
 
 - sorting
 
-#. Questions pièges
+9. Questions pièges
 ===================
 
 - id(1) != id('1')
 - [] += 1 vs .append()
 - http://docs.python-guide.org/en/latest/writing/gotchas
 
-#. References
+10. References
 =============
 
 - pydev
