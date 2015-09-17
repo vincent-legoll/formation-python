@@ -234,7 +234,8 @@ listes
 maps
 ----
 
-- animal_count(['coq', 'chien', 'coq', 'chat', 'chat', 'vache', 'coq', 'chien'])
+- animal_count(['coq', 'chien', 'coq', 'chat', 'chat', 'vache', 'coq', 'chien']) =>
+  {'coq': 3, 'chien': 2, 'chat': 2, 'vache': 1}
 
 sys.argv
 --------
@@ -242,7 +243,7 @@ sys.argv
 fichiers
 --------
 
-- animal_count_from_file(fn)
+- animal_count_from_file(fn) => {'dodo': 1, 'dragon': 1}
 
 dates
 -----
@@ -261,7 +262,8 @@ algorithmes
 ===================
 
 - id(1) != id('1')
-- []+=1 vs .append()
+- [] += 1 vs .append()
+- http://docs.python-guide.org/en/latest/writing/gotchas
 
 #. References
 =============
