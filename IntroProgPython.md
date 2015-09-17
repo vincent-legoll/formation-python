@@ -34,7 +34,10 @@ interpréteurs
 science
 -------
 
-NumPy, SciPy, Matplotlib, BioPython
+- NumPy
+- SciPy
+- Matplotlib
+- BioPython
 
 3. Contexte
 ===========
@@ -88,7 +91,7 @@ opérateurs
 - binaires |^&
 - logiques and or not cmp() > < ==
 - arithmétiques +, -, *, /, **, and %
-- assignation += -= /= *=
+- assignation += -= /=
 - compatibilité de type, coercission de type
   1 + '1' => TypeError: unsupported operand type(s) for +: 'int' and 'str'
   str(1) + '1' => '11'
