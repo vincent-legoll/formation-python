@@ -1,4 +1,4 @@
-﻿Introduction à la Programmation Python
+Introduction à la Programmation Python
 
 1. Programmation
 ================
@@ -68,7 +68,7 @@ types de données
 - booléens: logique vrai/faux
 - numériques: entiers, flottants (précision, flou, arrondis, approximations), complexes
   * limites en info != maths, les nombres ne sont pas infinis (sys.maxint)
-  * id(1) != id(1.0)
+  * 1 == 1L == 1.0 == complex(1,0) et pourtant id(1) != id(1.0), la comparaison n'est pas l'identité
 - séquences:
   * list()
   * tuple()
@@ -127,7 +127,7 @@ commentaires
 ------------
 
 - rendre le code plus compréhensible
-- lisibilité (avec les espaces entre les expressions)
+- lisibilité (avec les espaces entre les expressions, etc...)
 
 builtins
 --------
@@ -242,6 +242,8 @@ maps
 
 sys.argv
 --------
+
+- hello(things=sys.argv)
 
 fichiers
 --------
