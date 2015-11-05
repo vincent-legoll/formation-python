@@ -24,8 +24,7 @@ Vers le mode diaporama en l'ouvrant dans un navigateur:
 
 	jupyter nbconvert InitiationPython.ipynb --to slides --post serve
 	
-> #
-Encore mieux: l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
+> Encore mieux: l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
 	
 D'autres exemples de conversion avec
 
