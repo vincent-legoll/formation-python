@@ -42,6 +42,8 @@ science
 3. Contexte
 ===========
 
+https://en.wikipedia.org/wiki/List_of_Python_software
+
 4. Documentation
 ================
 
