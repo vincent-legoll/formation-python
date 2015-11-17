@@ -1,4 +1,11 @@
-exos: 1 x debug
+Prévenir Sylvie
+verifier réseau + eteindre
+
+
+
+exos:
+1 x debug
+encoding
 
 Plan
 
