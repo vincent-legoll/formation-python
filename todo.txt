@@ -14,6 +14,7 @@ Généralités
  - apperçu / description des caracs python
  - historique
  - un interpréteur, qu'est-ce que c'est => perfs, librairies
+ - mode script
  - interpreteurs
  - versions 2 & 3
  - interp CLI / ipython
@@ -23,4 +24,5 @@ Généralités
 
  Le Langage
   - types / opérations
-  nombre
+  - mise en page
+  - structure de controle
