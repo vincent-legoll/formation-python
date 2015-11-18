@@ -1,4 +1,4 @@
-# Petit notice d'utilisation des Notebooks Python
+# Petite notice d'utilisation des Notebooks Python
 
 
 ## Installation de Jupyter
