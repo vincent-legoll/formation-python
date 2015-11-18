@@ -1,5 +1,6 @@
 # Petit notice d'utilisation des Notebooks Python
 
+
 ## Installation de Jupyter
 
 L'idéal est d'utiliser [Anaconda](http://jupyter.readthedocs.org/en/latest/install.html)
@@ -29,3 +30,7 @@ Vers le mode diaporama en l'ouvrant dans un navigateur:
 D'autres exemples de conversion avec
 
 	jupyter nbconvert -h
+    
+## Liens utiles
+
+- [Doc Markdown](https://guides.github.com/features/mastering-markdown)
