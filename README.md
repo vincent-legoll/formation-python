@@ -25,6 +25,10 @@ Vers le mode diaporama en l'ouvrant dans un navigateur:
 
 	jupyter nbconvert InitiationPython.ipynb --to slides --post serve
 	
+Lancer le diaporama en utilisant un port différent du port par défaut (afin d'ouvrir plusieurs diaporamas) :
+
+	jupyter-nbconvert 01-InitPython-langage.ipynb --to slides --post serve --ServePostProcessor.port=8001 
+	 	
 > Encore mieux: l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
 	
 D'autres exemples de conversion avec
