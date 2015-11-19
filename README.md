@@ -19,21 +19,26 @@ Sur cette page, il suffit de cliquer sur le nom du notebook pour l'éditer et l'
 
 En document pdf :
 
-	jupyter nbconvert InitiationPython.ipynb --to pdf
+	jupyter-nbconvert InitiationPython.ipynb --to pdf
 	
 Vers le mode diaporama en l'ouvrant dans un navigateur:
 
-	jupyter nbconvert InitiationPython.ipynb --to slides --post serve
+	jupyter-nbconvert InitiationPython.ipynb --to slides --post serve
 	
-Lancer le diaporama en utilisant un port différent du port par défaut (afin d'ouvrir plusieurs diaporamas) :
+Lancer le diaporama en utilisant un port différent du port par défaut (afin d'avoir plusieurs diaporamas ouverts) :
 
 	jupyter-nbconvert 01-InitPython-langage.ipynb --to slides --post serve --ServePostProcessor.port=8001 
-	 	
-> Encore mieux: l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
+	
+Lancer le diaporama après avoir exécuté toutes les cellules du notebook :
+
+	jupyter-nbconvert InitiationPython.ipynb --to slides --post serve --execute
+
+
+> **Utile :** l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
 	
 D'autres exemples de conversion avec
 
-	jupyter nbconvert -h
+	jupyter-nbconvert -h
     
 ## Liens utiles
 
