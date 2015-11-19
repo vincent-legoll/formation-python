@@ -2,16 +2,16 @@ Prévenir Sylvie
 verifier réseau + eteindre
 
 
-
 exos:
 1 x debug
 encoding
 
 Plan
 
-Généralités
+* Généralités (00-InitPython-generalites.ipynb):
+
  - la programmation
- - apperçu / description des caracs python
+ - aperçu / description des caracs python
  - historique
  - un interpréteur, qu'est-ce que c'est => perfs, librairies
  - mode script
@@ -22,7 +22,10 @@ Généralités
  - intérêt scientifique
  - packages scientifiques
 
- Le Langage
+* Le Langage (01-InitPython-langage.ipynb)
   - types / opérations
   - mise en page
-  - structure de controle
+  - structures de controle
+
+* Micro-projets (02-InitPython-projets.ipynb)
+
