@@ -10,22 +10,26 @@ Plan
 
 * Généralités (00-InitPython-generalites.ipynb):
 
- - la programmation
- - aperçu / description des caracs python
- - historique
- - un interpréteur, qu'est-ce que c'est => perfs, librairies
- - mode script
- - interpreteurs
- - versions 2 & 3
- - interp CLI / ipython
- - exemple d'app.
- - intérêt scientifique
- - packages scientifiques
+-- la programmation
+-- aperçu / description des caracs python
+-- historique
+-- un interpréteur, qu'est-ce que c'est => perfs, librairies
+ - mode script - todo
+-- interpreteurs
+ - versions 2 & 3 - a deplacer
+ - interp. CLI / ipython - todo
+-- exemple d'app.
+ - intérêt scientifique - todo
+-- packages scientifiques
 
 * Le Langage (01-InitPython-langage.ipynb)
-  - types / opérations
-  - mise en page
-  - structures de controle
+-- types / opérations
+-- mise en page
+-- structures de controle
 
 * Micro-projets (02-InitPython-projets.ipynb)
 
+* Conclusion (04-Conclusion.ipynb)
+  - zen - a deplacer
+  - import this - a deplacer
+  - references ?
