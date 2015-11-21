@@ -33,3 +33,22 @@ Plan
   - zen - a deplacer
   - import this - a deplacer
   - references ?
+
+Solutions 
+
+* Exo fichiers :
+---------------
+mystere = ["Gur Mra bs Clguba, ol Gvz Crgref\n",
+                "\nOrnhgvshy vf orggre guna htyl.\n",
+                "Rkcyvpvg vf orggre guna vzcyvpvg.\n"]
+# Votre code ci-dessous
+f = open('coded.txt', mode='w')
+f.writelines(mystere)
+f.close()
+f = open('coded.txt', mode='r')
+coded = f.read()
+f.close()
+f = open('decoded.txt', mode='w')
+decoded = coded.decode('rot13')
+f.write(decoded)
+f.close()
