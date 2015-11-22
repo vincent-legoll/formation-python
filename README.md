@@ -61,10 +61,10 @@ il y a un truc bizarre dans le commentaire final
 - bit à bit 
 - arithmétiques **[MB: OK]**
 - logiques **[MB: OK]**
-- comparaison **[VL]**
-- assignation **[VL]**
-- Compatibilité de type, coercition de type **[MB]**
-- priorité des opérateurs **[VL]**
+- comparaison **[VL: OK]**
+- assignation **[VL: OK]**
+- Compatibilité de type, coercition de type **[MB]** **[VL: OK]**
+- priorité des opérateurs **[VL: OK]**
 
 
 ### Strutures de contrôle
