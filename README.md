@@ -4,29 +4,29 @@
 
 - Prise en main des notebooks **[MB: OK]**
 - Généralités sur le langage Python
-	- La programmation, qu'est-ce que c'est ?
+	- La programmation, qu'est-ce que c'est ? **[VL: OK]**
 	- Le langage Python **[MB: OK]**
-	- Historique
+	- Historique **[VL: OK]**
 	- Philosophie -> à déplacer ?
-	- Qu'est-ce qu'un langage interprété ?
-	- Quelques interpréteurs Python
-	- Exécution d'un programme Python
+	- Qu'est-ce qu'un langage interprété ? **[VL: OK]**
+	- Quelques interpréteurs Python **[VL: OK]**
+	- Exécution d'un programme Python **[VL: OK]**
 	- Terminal iPython **[MB]**
 	- Spyder : une interface de développement pour Python **[MB]**
-	- Applications
+	- Applications / exemples **[VL: OK]**
 	- Intérêt scientifique/package **[MB]**
-	- Documentation
+	- Documentation **[VL: OK]**
 
 
 > Notebook : [00-InitPython-generalites.ipynb] (ce notebook)
 
 ## Le langage [1/2]
 
-### Variables **[VL]**
-### Python 2/Python 3 **[VL]** 
+### Variables **[VL: OK]**
+### Python 2/Python 3 **[VL: OK]**
 ### Types de données
 - Types de base
-	- ``None``
+	- None **[VL: OK]**
 	- Booléens **[MB: OK]**
 	- Numériques **[MB: OK]**
 		- entiers
@@ -37,11 +37,12 @@
 	- listes ``list()`` **[MB: OK]**
 	- tuples ``tuple()`` **[MB: OK]**
 - Conteneurs
-	- Dictionnaires ``dict()`` **[VL]**
-	- Ensembles ``set()`` **[VL]**
-	- Littéraux ``{}``, méthodes ``dict()``, etc... **[VL]**
+	- Dictionnaires ``dict()`` **[VL: OK]**
+	- Ensembles ``set()`` **[VL: OK]**
+	- Littéraux ``{}``, méthodes ``dict()``, etc... **[VL: OK]**
 	
 ### Fichiers **[MB: OK]**
+il y a un truc bizarre dans le commentaire final
 
 > Notebook : [[01-InitPython-langage-1.ipynb]](http://localhost:8888/notebooks/01-InitPython-langage-1.ipynb)
 
@@ -60,10 +61,10 @@
 
 ### Strutures de contrôle
 
-- mise en page **[VL]**
-- pass
+- mise en page **[VL: OK]**
+- pass **[VL: OK]**
 - tests: if / elif / else **[MB: OK]**
-- boucles **[VL]**
+- boucles **[VL: OK]**
 	* for elt in liste
 	* for idx in range(len(liste))
 	* while
