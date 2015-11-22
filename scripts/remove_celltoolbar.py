@@ -21,8 +21,8 @@ def process_nb(notebook):
             out_file.writelines(data)
 
 notebooks = ('00-InitPython-generalites.ipynb',
-            '01-InitPython-langage-1.ipynb',
-            '01-InitPython-langage-2.ipynb')
+             '01-InitPython-langage.ipynb',
+             '02-InitPython-langage.ipynb')
             
 for notebook in notebooks:
     process_nb(notebook)
