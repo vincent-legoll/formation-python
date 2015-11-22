@@ -1,3 +1,9 @@
+# Questions à discuter :
+
+- Qu'est-ce qui manque ?
+- Mise en forme des slides (rappel du titre comme le fait MB : à virer ?)
+- Procédure pour extraire les fichiers à distribuer à partir du dernier commit
+
 # Plan de la formation
 
 ## Généralités
