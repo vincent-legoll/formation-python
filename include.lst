@@ -5,7 +5,8 @@
 02-InitPython-langage.ipynb
 02-InitPython-langage.slides.html
 mon_module.py
-fig/*.png
+fig/compile_interprete.png
+fig/python-logo.png
 exos/num2bin.py
 exos/fichiers.py
 interessant.txt
