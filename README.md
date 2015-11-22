@@ -11,8 +11,10 @@
 	- Qu'est-ce qu'un langage interprété ?
 	- Quelques interpréteurs Python
 	- Exécution d'un programme Python
-	- Terminal iPython **[MB]**
-	- Spyder : une interface de développement pour Python **[MB]**
+		- console Python **[MB: OK]**
+		- console système **[MB: OK]**
+		- console iPython **[MB: OK]**
+		- IDEs pour Python **[MB: OK]**
 	- Applications
 	- Intérêt scientifique/package **[MB]**
 	- Documentation
