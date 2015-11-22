@@ -1,8 +1,9 @@
 #!/bin/bash
 
+./scripts/nb2slides.sh
 python scripts/remove_celltoolbar.py
 
-zip formation-python.zip \
+zip -r -i@include.lst formation-python.zip \
 00-InitPython-generalites.ipynb \
 00-InitPython-generalites.slides.html \
 01-InitPython-langage.ipynb \
@@ -12,8 +13,7 @@ zip formation-python.zip \
 mon_module.py \
 fig \
 exos \
-interessant.txt \
-mon_module.pyc
+interessant.txt
 
 # README.md
 # scripts
