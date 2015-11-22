@@ -148,7 +148,17 @@ Lancer le diaporama après avoir exécuté toutes les cellules du notebook :
 
 
 > **Utile :** l'insertion d'un bouton de rendu "diaporama" *(live reveal)* dans l'interface d'édition du notebook en installant [RISE](https://github.com/damianavila/RISE).
+
+Autre manière de lancer un slideshow :
+
+	jupyter-nbconvert InitiationPython.ipynb --to slides
+
+puis
+
+	python -m SimpleHTTPServer 8000
 	
+et aller à l'url [http://localhost:8000/0InitiationPython.ipynb.slides.html#/](http://localhost:8000/0InitiationPython.ipynb.slides.html#/) dans un navigateur.
+
 D'autres exemples de conversion avec
 
 	jupyter-nbconvert -h
