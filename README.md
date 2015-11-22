@@ -7,7 +7,7 @@
 	- La programmation, qu'est-ce que c'est ? **[VL: OK]**
 	- Le langage Python **[MB: OK]**
 	- Historique **[VL: OK]**
-	- Philosophie **[VL: OK]**
+	- Philosophie déplacée **[VL: OK]**
 	- Qu'est-ce qu'un langage interprété ? **[VL: OK][MB: OK]**
 	- Quelques interpréteurs Python **[VL: OK][MB: OK]**
 	- Exécution d'un programme Python
@@ -67,11 +67,11 @@ il y a un truc bizarre dans le commentaire final
 - pass **[VL: OK]**
 - tests: if / elif / else **[MB: OK]**
 - boucles **[VL: OK]**
-	* for elt in liste
-	* for idx in range(len(liste))
-	* while
-	* break
-	* continue
+	* for elt in liste **[VL: OK]**
+	* for idx in range(len(liste)) **[VL: OK]**
+	* while **[VL: OK]**
+	* break **[VL: OK]**
+	* continue **[VL: OK]**
 
 ### Fonctions
   * avec/sans return **[MB: OK]**
@@ -83,9 +83,9 @@ il y a un truc bizarre dans le commentaire final
   * lambda **[VL]**
   * compréhensions de listes **[MB]**
 
-### Erreurs et exceptions
-- try/catch **[VL]**
-- ``with``
+### Erreurs et exceptions **[VL: OK]**
+- try/catch **[VL: OK]**
+- ``with`` **[VL: OK]**
 
 
 - surcharge d'opérateurs
