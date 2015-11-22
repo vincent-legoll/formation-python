@@ -10,10 +10,12 @@
 	- Philosophie -> à déplacer ?
 	- Qu'est-ce qu'un langage interprété ? **[VL: OK]**
 	- Quelques interpréteurs Python **[VL: OK]**
-	- Exécution d'un programme Python **[VL: OK]**
-	- Terminal iPython **[MB]**
-	- Spyder : une interface de développement pour Python **[MB]**
-	- Applications / exemples **[VL: OK]**
+	- Exécution d'un programme Python
+		- console Python **[MB: OK]**
+		- console système **[MB: OK]**
+		- console iPython **[MB: OK]**
+		- IDEs pour Python **[MB: OK]**
+	- Applications
 	- Intérêt scientifique/package **[MB]**
 	- Documentation **[VL: OK]**
 
