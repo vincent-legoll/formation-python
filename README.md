@@ -8,16 +8,16 @@
 	- Le langage Python **[MB: OK]**
 	- Historique **[VL: OK]**
 	- Philosophie -> à déplacer ?
-	- Qu'est-ce qu'un langage interprété ? **[VL: OK]**
-	- Quelques interpréteurs Python **[VL: OK]**
+	- Qu'est-ce qu'un langage interprété ? **[VL: OK][MB: OK]**
+	- Quelques interpréteurs Python **[VL: OK][MB: OK]**
 	- Exécution d'un programme Python
 		- console Python **[MB: OK]**
 		- console système **[MB: OK]**
 		- console iPython **[MB: OK]**
 		- IDEs pour Python **[MB: OK]**
-	- Applications
-	- Intérêt scientifique/package **[MB]**
-	- Documentation **[VL: OK]**
+	- Applications **[MB: OK]**
+	- Intérêt scientifique/package **[MB: OK]**
+	- Documentation **[VL: OK][MB: OK]**
 
 
 > Notebook : [00-InitPython-generalites.ipynb] (ce notebook)
