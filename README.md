@@ -7,7 +7,7 @@
 	- La programmation, qu'est-ce que c'est ? **[VL: OK]**
 	- Le langage Python **[MB: OK]**
 	- Historique **[VL: OK]**
-	- Philosophie -> à déplacer ?
+	- Philosophie **[VL: OK]**
 	- Qu'est-ce qu'un langage interprété ? **[VL: OK][MB: OK]**
 	- Quelques interpréteurs Python **[VL: OK][MB: OK]**
 	- Exécution d'un programme Python
