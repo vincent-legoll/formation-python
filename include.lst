@@ -7,9 +7,15 @@
 mon_module.py
 fig/compile_interprete.png
 fig/python-logo.png
-exos/num2bin.py
+exos/alphabet.py
+exos/boule.py
+exos/chaine_donnee.py
 exos/fichiers.py
+exos/meteo_json.py
+exos/num2bin.py
+exos/reverse.py, 
 exos/stat.py
+exos/trad_num.py
 exos/ttc.py
 interessant.txt
 README.md
