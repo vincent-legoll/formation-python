@@ -1,13 +1,20 @@
 #!/bin/bash
 
+port=`expr 8000 + 1`
+
 case $1 in
   "0")
-      jupyter-nbconvert 00-InitPython-generalites.ipynb --to slides --post serve --ServePostProcessor.port=8000
+      nbfile="00-InitPython-generalites.ipynb"
       ;;
   "1")
-      jupyter-nbconvert 01-InitPython-langage.ipynb --to slides --post serve --ServePostProcessor.port=8001
+      nbfile="01-InitPython-langage.ipynb"
       ;;
   "2")
-      jupyter-nbconvert 02-InitPython-langage.ipynb --to slides --post serve --ServePostProcessor.port=8002
+      nbfile="02-InitPython-langage.ipynb"
+      ;;
+  *)
+      exit
       ;;
   esac
+set -x
+jupyter-nbconvert $nbfile --to slides --post serve $2 --allow-errors --ServePostProcessor.port=$port
