@@ -14,3 +14,7 @@ f = open('decoded.txt', mode='w')
 decoded = coded.decode('rot13')
 f.write(decoded)
 f.close()
+
+# Pour les impatients :
+
+print ''.join(mystere).decode('rot13')
