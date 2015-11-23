@@ -9,4 +9,6 @@ fig/compile_interprete.png
 fig/python-logo.png
 exos/num2bin.py
 exos/fichiers.py
+exos/stat.py
+exos/ttc.py
 interessant.txt
