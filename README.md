@@ -3,11 +3,18 @@
 ## Installation de Jupyter
 
 L'idéal est d'utiliser [Anaconda](http://jupyter.readthedocs.org/en/latest/install.html)
-Vous pouvez télécharger Anaconda [ici](https://www.continuum.io/downloads)
+que pouvez télécharger [ici](https://www.continuum.io/downloads).
+Anaconda est une suite assez complète et facile à utiliser. Outre les notebook Jupyter, Anaconda contient entre autre :
+
+- l'IDE [Spyder](https://github.com/spyder-ide/spyder)
+- les deux versions Python 2 et Python 3
+- le gestionnaire de paquets Python ``conda``
+
 
 ## Lancement d'un serveur Jupyter
 
-Par exemple depuis le répertoire de travail des notebooks avec la commande:
+- Soit via l'utilitaire ``Launcher`` d'Anaconda
+- Soit en ligne de commande, par exemple depuis le répertoire de travail des notebooks avec la commande:
 
 	jupyter-notebook
 
