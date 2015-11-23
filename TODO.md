@@ -78,7 +78,7 @@ encoding
 - priorité des opérateurs **[VL: OK]**
 
 
-### Strutures de contrôle
+### Structures de contrôle
 
 - mise en page **[VL: OK]**
 - pass **[VL: OK]**
