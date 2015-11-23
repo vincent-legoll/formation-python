@@ -10,9 +10,11 @@ fig/python-logo.png
 exos/alphabet.py
 exos/boule.py
 exos/chaine_donnee.py
+exos/chaines.py
 exos/fichiers.py
 exos/meteo_json.py
 exos/num2bin.py
+exos/odds.py
 exos/reverse.py, 
 exos/stat.py
 exos/trad_num.py
