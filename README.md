@@ -1,9 +1,9 @@
 # Petite notice d'utilisation des Notebooks Python
 
-
 ## Installation de Jupyter
 
 L'idéal est d'utiliser [Anaconda](http://jupyter.readthedocs.org/en/latest/install.html)
+Vous pouvez télécharger Anaconda [ici](https://www.continuum.io/downloads)
 
 ## Lancement d'un serveur Jupyter
 
