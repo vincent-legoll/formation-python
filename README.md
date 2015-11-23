@@ -8,6 +8,8 @@
 
 ## Généralités
 
+> Notebook : [00-InitPython-generalites.ipynb] (ce notebook)
+
 - Prise en main des notebooks **[MB: OK]**
 - Généralités sur le langage Python
 	- La programmation, qu'est-ce que c'est ? **[VL: OK]**
@@ -25,10 +27,9 @@
 	- Intérêt scientifique/package **[MB: OK]**
 	- Documentation **[VL: OK][MB: OK]**
 
-
-> Notebook : [00-InitPython-generalites.ipynb] (ce notebook)
-
 ## Le langage [1/2]
+
+> Notebook : [[01-InitPython-langage.ipynb]](http://localhost:8888/notebooks/01-InitPython-langage.ipynb)
 
 ### Variables **[VL: OK]**
 ### Python 2/Python 3 **[VL: OK]**
@@ -50,11 +51,10 @@
 	- Littéraux ``{}``, méthodes ``dict()``, etc... **[VL: OK]**
 	
 ### Fichiers **[MB: OK]**
-il y a un truc bizarre dans le commentaire final
-
-> Notebook : [[01-InitPython-langage-1.ipynb]](http://localhost:8888/notebooks/01-InitPython-langage-1.ipynb)
 
 ## Le langage [2/2]
+
+> Notebook : [[02-InitPython-langage.ipynb]](http://localhost:8888/notebooks/02-InitPython-langage.ipynb)
 
 ### Opérateurs
 
@@ -100,7 +100,6 @@ il y a un truc bizarre dans le commentaire final
 
 ### Modules
 
-> Notebook : [[01-InitPython-langage-2.ipynb]](http://localhost:8888/notebooks/01-InitPython-langage-2.ipynb)
 
 ## Micro-projet
 
