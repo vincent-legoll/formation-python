@@ -1,9 +1,6 @@
 00-InitPython-generalites.ipynb
-00-InitPython-generalites.slides.html
 01-InitPython-langage.ipynb
-01-InitPython-langage.slides.html
 02-InitPython-langage.ipynb
-02-InitPython-langage.slides.html
 mon_module.py
 fig/compile_interprete.png
 fig/python-logo.png
