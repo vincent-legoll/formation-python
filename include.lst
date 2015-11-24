@@ -1,6 +1,7 @@
 00-InitPython-generalites.ipynb
 01-InitPython-langage.ipynb
 02-InitPython-langage.ipynb
+03-InitPython-microprojet.ipynb
 mon_module.py
 fig/compile_interprete.png
 fig/python-logo.png
