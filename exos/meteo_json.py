@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Process a weather forcast json file to plot the time evolution of today
-temperature at Strasbourg
+Process a weather forecast json file to plot the time evolution of today's
+temperature in Strasbourg
 """
 
 import urllib2
