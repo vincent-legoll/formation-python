@@ -13,7 +13,7 @@ exos/fichiers.py
 exos/meteo_json.py
 exos/num2bin.py
 exos/odds.py
-exos/reverse.py, 
+exos/reverse.py
 exos/stat.py
 exos/trad_num.py
 exos/ttc.py
