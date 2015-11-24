@@ -12,6 +12,9 @@ case $1 in
   "2")
       nbfile="02-InitPython-langage.ipynb"
       ;;
+  "3")
+      nbfile="03-InitPython-microprojet.ipynb"
+      ;;
   *)
       exit
       ;;
