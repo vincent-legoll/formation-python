@@ -3,4 +3,4 @@
 def chevalier(repetitions):
     print 'Ni !\n' * repetitions
 
-chevalier(6)
+chevalier(3)
