@@ -22,7 +22,8 @@ def process_nb(notebook):
 
 notebooks = ('00-InitPython-generalites.ipynb',
              '01-InitPython-langage.ipynb',
-             '02-InitPython-langage.ipynb')
+             '02-InitPython-langage.ipynb',
+             '03-InitPython-microprojet.ipynb')
             
 for notebook in notebooks:
     process_nb(notebook)
