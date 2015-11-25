@@ -14,5 +14,5 @@ print L[-1:-len(l)-1:-1]
 
 # Explications:
 # On commence à la dernière place
-# On s'arrête à la première, exprimée en index négatifs
+# On s'arrête à la première, exprimée en indices négatifs
 # Le pas est de -1 => à l'envers
