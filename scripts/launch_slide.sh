@@ -1,6 +1,6 @@
 #!/bin/bash
 
-port=`expr 8000 + 1`
+port=`expr 8000 + $1`
 
 case $1 in
   "0")
