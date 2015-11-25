@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -eq 0 ]; then
+  echo Usage: `basename $0` 0, 1, 2 or 3 [--execute] 1>&2
+  exit 1
+fi
+
 port=`expr 8000 + $1`
 
 case $1 in
