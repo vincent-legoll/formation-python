@@ -15,7 +15,7 @@ jsonfile_url = "http://www.prevision-meteo.ch/services/json/Strasbourg"
 f = urllib2.urlopen(jsonfile_url)  # open url
 json = json.load(f)  # Read JSON file
 
-day = json['fcst_day_1']  # point the current day data
+day = json['fcst_day_0']  # point the current day data
 day_hd = day['hourly_data']  # point to hourly data
 
 # Get temperature:
