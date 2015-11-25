@@ -1,23 +1,19 @@
 # -*- coding: utf-8 -*-
 """Remove cell Toolbar from ipynb files"""
 
-import io
-
-#notebook = '00-InitPython-generalites.ipynb'
-
 def process_nb(notebook):
-    with io.open(notebook, 'r') as in_file:
+    with open(notebook, 'rb') as in_file:
         data = in_file.readlines()
         print "File:", notebook
         try:
-            data.remove(u'  "celltoolbar": "Slideshow",\n')
+            data.remove('  "celltoolbar": "Slideshow",\n')
             print " > Line removed"
             line_removed = True
         except:
             print " > Line not removed !"
             line_removed = False
     if line_removed:
-        with io.open(notebook, 'w') as out_file:
+        with open(notebook, 'wb') as out_file:
             out_file.writelines(data)
 
 notebooks = ('00-InitPython-generalites.ipynb',
