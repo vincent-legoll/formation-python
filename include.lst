@@ -5,6 +5,7 @@
 mon_module.py
 fig/compile_interprete.png
 fig/python-logo.png
+fig/icon.png
 exos/alphabet.py
 exos/boule.py
 exos/chaine_donnee.py
@@ -15,6 +16,7 @@ exos/decompte.py
 exos/donne_rien.py
 exos/fichiers.py
 exos/meteo_json.py
+exos/meteo_json_func.py
 exos/num2bin.py
 exos/odds.py
 exos/pass.py
