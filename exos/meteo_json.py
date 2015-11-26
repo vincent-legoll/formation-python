@@ -18,10 +18,16 @@ json = json.load(f)  # Read JSON file
 day = json['fcst_day_0']  # point the current day data
 day_hd = day['hourly_data']  # point to hourly data
 
-# Get temperature:
-# get first part of time in 00H00 format
-# get temperature at 2m above ground
-tempe = [[int(time.split('H')[0]), day_hd[time]['TMP2m']] for time in day_hd]
+# Get tempe = [[h1, T1], [h2, T2], ...] list
+# where h1 is the time in hour and T2 is the temperature in deg. C
+tempe = []
+for hour, data in day_hd.iteritems():
+    # get first part of time in "00H00" format and remove "H00"
+    # get temperature at 2m above ground 'TMP2m'
+    tempe.append([int(hour[:-3]), data['TMP2m']])
+# Alternative form using list comprehension:
+# tempe = [[int(hour[:-3]), data['TMP2m']] for hour, data in day_hd.iteritems()]
+
 tempe.sort()  # Sort temperatures according to the hour of day
 t = np.array(tempe).transpose()  # Transpose list of (hour, tempe)
 
@@ -41,7 +47,7 @@ ax.plot(t[0], t[1])  # plot t[1] (tempe) as a function of t[0] (hour)
 # Add meteo icon to plot
 icon = urllib2.urlopen(day['icon_big'])  # Open weather icon
 
-axicon = fig.add_axes([0.8,0.8,0.15,0.15])
+axicon = fig.add_axes([0.8, 0.8, 0.15, 0.15])
 img = mpimg.imread(icon)  # initialise image
 axicon.set_xticks([])  # Remove axes ticks
 axicon.set_yticks([])
