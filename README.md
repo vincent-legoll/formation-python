@@ -10,6 +10,14 @@ Anaconda est une suite assez complète et facile à utiliser. Outre les notebook
 - les deux versions Python 2 et Python 3
 - le gestionnaire de paquets Python ``conda``
 
+Pour installer [Jupyter](https://pypi.python.org/pypi/jupyter) sur une distribution
+linux qui ne le propose pas dans son gestionnaire de paquets, il faut utiliser [``pip``](https://pypi.python.org/pypi/pip) :
+
+    sudo pip install jupyter
+
+Pour l'IDE [Spyder](https://pypi.python.org/pypi/spyder), on peut faire de même:
+
+    sudo pip install spyder
 
 ## Lancement d'un serveur Jupyter
 
