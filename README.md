@@ -10,6 +10,9 @@ Anaconda est une suite assez complète et facile à utiliser. Outre les notebook
 - les deux versions Python 2 et Python 3
 - le gestionnaire de paquets Python ``conda``
 
+Attention: certaines versions récentes d'anaconda utilisent python3 par défaut,
+le code présent dans les notebook de cette formations n'est pas compatible avec python3.
+
 Pour installer [Jupyter](https://pypi.python.org/pypi/jupyter) sur une distribution
 linux qui ne le propose pas dans son gestionnaire de paquets, il faut utiliser [``pip``](https://pypi.python.org/pypi/pip) :
 
