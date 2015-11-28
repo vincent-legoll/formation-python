@@ -28,3 +28,11 @@ print L[-1:-len(l)-1:-1]
 # La solution "optimale" : elle utilise un iterateur et donc
 # ne consomme aucune ressource tant qu'on ne l'utilise pas 
 print reversed(L)
+
+# Pour le fun, voici une version fonctionelle récursive
+def rev(alist):
+    if not alist:
+        return []
+    return alist[-1:] + rev(alist[:-1])
+
+print rev(L)
