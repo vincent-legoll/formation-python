@@ -16,3 +16,7 @@ print L[-1:-len(l)-1:-1]
 # On commence à la dernière place
 # On s'arrête à la première, exprimée en indices négatifs
 # Le pas est de -1 => à l'envers
+
+# La solution "optimale" : elle utilise un iterateur et donc
+# ne consomme aucune ressource tant qu'on ne l'utilise pas 
+print reversed(L)
