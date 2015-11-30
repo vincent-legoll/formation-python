@@ -12,6 +12,7 @@ import numpy as np
 
 
 def get_city(city):
+    """Return a meteo json dictionary corresponding to city"""
 
     jsonfile_url = "http://www.prevision-meteo.ch/services/json/" + city
 
@@ -20,6 +21,7 @@ def get_city(city):
 
 
 def plot_day_tempe(day):
+    """Plot Temperature vs hour from a day dictionary"""
 
     day_hd = day['hourly_data']  # point to hourly data
 
@@ -60,13 +62,14 @@ def plot_day_tempe(day):
 
 
 def get_day(city_json):
+    """From user input, return the key for day in json dictonary"""
 
     days = {day: data['day_long'] for day, data in city_json.iteritems()
-            if day[:8] == "fcst_day"}
+            if day[:8] == "fcst_day"}  # Create {'fcst_day_#': week-day}
     question = """
     Choix du jour :\n
     """
-    days_list = []
+    days_list = []  # Build ['fcst_day_#', week-day] sorted list
     for i in range(5):
         key = "fcst_day_{}".format(i)
         day = [key, days[key]]
@@ -77,5 +80,5 @@ def get_day(city_json):
 
 
 city_json = get_city('Strasbourg')  # get json dict from city name
-day = get_day(city_json)
-plot_day_tempe(city_json[day])
+day = get_day(city_json)  # get day key from user input
+plot_day_tempe(city_json[day])  # plot day temperature evolution
