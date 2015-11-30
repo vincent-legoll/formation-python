@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 python scripts/remove_celltoolbar.py
 
 ./scripts/make_includes.sh
