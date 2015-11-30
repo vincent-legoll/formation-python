@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Process a weather forecast json file to plot the time evolution of today's
@@ -59,6 +60,7 @@ def plot_day_tempe(day):
     axicon.set_xticks([])  # Remove axes ticks
     axicon.set_yticks([])
     axicon.imshow(img)  # trigger the image show
+    plt.show()  # trigger the figure show
 
 
 def get_day(city_json):
@@ -66,15 +68,13 @@ def get_day(city_json):
 
     days = {day: data['day_long'] for day, data in city_json.iteritems()
             if day[:8] == "fcst_day"}  # Create {'fcst_day_#': week-day}
-    question = """
-    Choix du jour :\n
-    """
+    question = "Choix du jour :\n"
     days_list = []  # Build ['fcst_day_#', week-day] sorted list
+    # This i-loop is required because "days" is not sorted:
     for i in range(5):
         key = "fcst_day_{}".format(i)
-        day = [key, days[key]]
-        days_list.append(day)
-        question = question + "{}) {}\n".format(i, day[1])
+        days_list.append([key, days[key]])
+        question = question + "{}) {}\n".format(i, days[key])
     choice = int(raw_input(question))
     return days_list[choice][0]
 
