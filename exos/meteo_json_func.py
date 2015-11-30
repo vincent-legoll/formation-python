@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Process a weather forecast json file to plot the time evolution of today's
-temperature in Strasbourg
+Process a weather forecast json file to plot the time evolution of temperature
+of a given day in a given city
 """
 
 import urllib2
@@ -91,6 +91,8 @@ def get_day(city_json):
             print "Entrée non valide."
 
 
-city_json = get_city()  # get json dict from user input
-day_key = get_day(city_json)  # get day key from user input
-plot_day_tempe(city_json, day_key)  # plot day temperature evolution
+if __name__ == '__main__':
+    # This block is not executed if this file is imported as a module
+    city_json = get_city()  # get json dict from user input
+    day_key = get_day(city_json)  # get day key from user input
+    plot_day_tempe(city_json, day_key)  # plot day temperature evolution
