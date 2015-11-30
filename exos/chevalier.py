@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
 def chevalier(repetitions):
-    print 'Ni !\n' * repetitions
+    print 'Ni!' * repetitions
 
 chevalier(3)
