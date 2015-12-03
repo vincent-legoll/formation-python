@@ -61,24 +61,6 @@ def replace_string(file_name, old_string, new_string):
         out_file.write(newdata)
 
 
-def escape_latex(tex_file_name):
-    """Escape some characters in latex file"""
-
-    with open(tex_file_name, 'r') as in_file:
-        data = in_file.read()
-        char_escape = {
-                       '\\n\n': '\\verb \\n \\ \n',
-                       '\\t\n': '\\verb \\t \\ \n',
-                       '\\uXXXX': '\\verb \\uXXXX ~'
-                       }
-        newdata = data[:]
-        for char, newchar in char_escape.iteritems():
-            newdata = newdata.replace(char, newchar)
-
-    with open(tex_file_name, 'w') as out_file:
-        out_file.write(newdata)
-
-
 def remove_from_latex(tex_file_name, block_start, block_end):
     """Remove block of lines that cannot be compiled with pdflatex"""
 
@@ -128,8 +110,6 @@ def latex_to_pdf(tex_file_name):
 
     pdf_file_name = tex_file_name.replace('.tex', '.pdf')
     print ">>> Converting {} to {}".format(tex_file_name, pdf_file_name)
-
-    escape_latex(tex_file_name)  # Convert some characters to latex
 
     # Remove block containing chess and Japanese characters
     block_start = "Premièrement, des chaînes contenant"
