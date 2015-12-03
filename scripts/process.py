@@ -171,7 +171,7 @@ if __name__ == '__main__':
             remove_line(latexfile, bad_strings)
 
             # Add usepacakage to .tex file header
-            in_line = "\usepackage{ulem}"
+            in_line = "\usepackage"
             line_to_add = "    \usepackage{textcomp}"
             add_line(latexfile, in_line, line_to_add)
 
