@@ -5,7 +5,6 @@
 import argparse
 from latex import build_pdf, LatexBuildError
 import os
-#from scripts import process  # Import local module
 import shlex
 import subprocess as sp
 
@@ -21,6 +20,10 @@ def run_cmd(cmd):
 
 def remove_line(file_name, bad_strings):
     """remove bad strings line from_filename"""
+
+    print ">>> From {}, removing lines containing: ".format(file_name)
+    for line in bad_strings:
+        print "\t", line
 
     with open(file_name, 'r') as in_file:
         data = in_file.readlines()
@@ -110,7 +113,7 @@ def clean_latex_files(notebook_file_name):
 
     extensions = (".tex", ".log", ".aux", ".out", ".synctex.gz", ".pdf")
     prefix = notebook_file_name.split('.ipynb')[0]
-    print ">>>> Cleaning files"
+    print ">>> Cleaning files"
     for extension in extensions:
         file_name = prefix + extension
         try:
@@ -149,8 +152,11 @@ def latex_to_pdf(tex_file_name):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description="Run validation test cases")
-    parser.add_argument('-nb', '--notebook', help="Notebook file name")
+    parser = argparse.ArgumentParser(description="Process notebook files")
+    parser.add_argument('-nb', '--notebook',
+                        help="Notebook file name (all notebooks if blank)")
+    parser.add_argument('--pdf', action='store_true',
+                        help="Convert to pdf using latex")
 
     args = parser.parse_args()
     if args.notebook:  # notebook file name is given as argument
@@ -165,39 +171,41 @@ if __name__ == '__main__':
 
         print ">> Processing:" + notebook
 
-        # Clean files
-        clean_latex_files(notebook)
-
         # Remove slideshow display in notebook
         bad_strings = ['  "celltoolbar": "Slideshow",\n']
         remove_line(notebook, bad_strings)
 
-        # Run notebook conversion to LaTeX
-        cmd = "jupyter-nbconvert {} --to latex --execute --allow-errors"\
-              .format(notebook)
-        p = run_cmd(cmd)
+        if args.pdf:
+            print ">>> Converting to pdf"
+            # Clean files
+            clean_latex_files(notebook)
 
-        # Remove unwanted lines in .tex file
-        bad_strings = ['\caption{}', '\maketitle']
-        latexfile = notebook.replace('.ipynb', '.tex')
-        remove_line(latexfile, bad_strings)
+            # Run notebook conversion to LaTeX
+            cmd = "jupyter-nbconvert {} --to latex --execute --allow-errors"\
+                  .format(notebook)
+            p = run_cmd(cmd)
 
-        # Add usepacakage to .tex file header
-        in_line = "\usepackage{ulem}"
-        line_to_add = "    \usepackage{textcomp}"
-        add_line(latexfile, in_line, line_to_add)
+            # Remove unwanted lines in .tex file
+            bad_strings = ['\caption{}', '\maketitle']
+            latexfile = notebook.replace('.ipynb', '.tex')
+            remove_line(latexfile, bad_strings)
 
-        # Replace some strings to scale figures
-        old2new = {
-                   "{fig/compile_interprete.png}":
-                   "[width=17cm]{fig/compile_interprete.png}",
-                   "{fig/spyder.png}":
-                   "[width=17cm]{fig/spyder.png}",
-                   "{fig/meld.png}":
-                   "[width=17cm]{fig/meld.png}"
-                   }
+            # Add usepacakage to .tex file header
+            in_line = "\usepackage{ulem}"
+            line_to_add = "    \usepackage{textcomp}"
+            add_line(latexfile, in_line, line_to_add)
 
-        for old, new in old2new.iteritems():
-            replace_string(latexfile, old, new)
+            # Replace some strings to scale figures
+            old2new = {
+                       "{fig/compile_interprete.png}":
+                       "[width=17cm]{fig/compile_interprete.png}",
+                       "{fig/spyder.png}":
+                       "[width=17cm]{fig/spyder.png}",
+                       "{fig/meld.png}":
+                       "[width=17cm]{fig/meld.png}"
+                       }
 
-        latex_to_pdf(latexfile)
+            for old, new in old2new.iteritems():
+                replace_string(latexfile, old, new)
+
+            latex_to_pdf(latexfile)

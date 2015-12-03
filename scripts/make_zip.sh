@@ -2,7 +2,7 @@
 
 set -x
 
-python scripts/remove_celltoolbar.py
+python scripts/process.py --pdf
 
 ./scripts/make_includes.sh
 
