@@ -2,7 +2,8 @@
 
 set -x
 
-python scripts/process.py --pdf
+# Remove slideshow lines and convert to pdf
+python scripts/process.py # --pdf
 
 ./scripts/make_includes.sh
 
