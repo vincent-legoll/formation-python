@@ -171,8 +171,9 @@ if __name__ == '__main__':
             remove_line(latexfile, bad_strings)
 
             # Add usepacakage to .tex file header
-            in_line = "\usepackage"
-            line_to_add = "    \usepackage{textcomp}"
+            in_line = "\usepackage{graphicx}"
+            line_to_add = "    \usepackage{textcomp}" \
+                          "    \usepackage{caption}\n"
             add_line(latexfile, in_line, line_to_add)
 
             # Replace some strings to scale figures
@@ -182,7 +183,16 @@ if __name__ == '__main__':
                        "{fig/spyder.png}":
                        "[width=17cm]{fig/spyder.png}",
                        "{fig/meld.png}":
-                       "[width=17cm]{fig/meld.png}"
+                       "[width=17cm]{fig/meld.png}",
+                       "\includegraphics{https://upload.wikimedia.org/"
+                       "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
+                       "260px-Tower_of_Hanoi_4.gif}":
+                       "\captionsetup{labelformat=empty}\n"
+                       "\includegraphics{fig/Tower_of_Hanoi.png}\n"
+                       "\caption{\href{https://upload.wikimedia.org/"
+                       "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
+                       "260px-Tower_of_Hanoi_4.gif}"
+                       "{Cliquer ici pour la version animée}}\n"
                        }
 
             for old, new in old2new.iteritems():
