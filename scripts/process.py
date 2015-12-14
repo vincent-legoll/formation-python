@@ -172,7 +172,7 @@ if __name__ == '__main__':
 
             # Add usepacakage to .tex file header
             in_line = "\usepackage{graphicx}"
-            line_to_add = "    \usepackage{textcomp}" \
+            line_to_add = "    \usepackage{textcomp}\n" \
                           "    \usepackage{caption}\n"
             add_line(latexfile, in_line, line_to_add)
 
@@ -194,7 +194,12 @@ if __name__ == '__main__':
                        "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
                        "260px-Tower_of_Hanoi_4.gif}"
                        "{Cliquer ici pour la version animée}}\n",
-		       "section{": "section*{"
+		       "section{": "section*{",
+                       "{matthieu.boileau@math.unistra.fr})\n"
+		       "\end{itemize}\n":
+                       "{matthieu.boileau@math.unistra.fr})\n"
+		       "\end{itemize}\n"
+		       "\\newpage\n"
                        }
 
             for old, new in old2new.iteritems():
