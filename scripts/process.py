@@ -182,7 +182,7 @@ if __name__ == '__main__':
                           "    \usepackage{caption}\n"
             add_line(latexfile, in_line, line_to_add)
 
-            # Add usepacakage to .tex file header
+            # Insert new page before new section
             in_line = "    \section"
             line_to_add = "\\newpage\n"
             add_line(latexfile, in_line, line_to_add, place='before')
@@ -204,7 +204,8 @@ if __name__ == '__main__':
                        "\caption{\href{https://upload.wikimedia.org/"
                        "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
                        "260px-Tower_of_Hanoi_4.gif}"
-                       "{Cliquer ici pour la version animée}}\n"
+                       "{Cliquer ici pour la version animée}}\n",
+                       "section{": "section*{"
                        }
 
             for old, new in old2new.iteritems():
