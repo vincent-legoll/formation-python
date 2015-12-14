@@ -177,6 +177,7 @@ if __name__ == '__main__':
             add_line(latexfile, in_line, line_to_add)
 
             # Replace some strings to scale figures
+	    # and perform some corrections
             old2new = {
                        "{fig/compile_interprete.png}":
                        "[width=17cm]{fig/compile_interprete.png}",
@@ -192,7 +193,8 @@ if __name__ == '__main__':
                        "\caption{\href{https://upload.wikimedia.org/"
                        "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
                        "260px-Tower_of_Hanoi_4.gif}"
-                       "{Cliquer ici pour la version animée}}\n"
+                       "{Cliquer ici pour la version animée}}\n",
+		       "section{": "section*{"
                        }
 
             for old, new in old2new.iteritems():
