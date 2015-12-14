@@ -35,16 +35,22 @@ def remove_line(file_name, bad_strings):
         out_file.writelines(newdata)
 
 
-def add_line(file_name, in_line, line_to_add):
+def add_line(file_name, in_line, line_to_add, place='after'):
     """Add a line after a given line in file_name"""
 
     with open(file_name, 'r') as in_file:
         data = in_file.readlines()
         newdata = []
         for line in data:
-            newdata.append(line)
             if in_line in line:
-                newdata.append(line_to_add)
+                if place == 'after':
+                    newdata.append(line)
+                    newdata.append(line_to_add)
+                else:
+                    newdata.append(line_to_add)
+                    newdata.append(line)
+            else:
+                newdata.append(line)
 
     with open(file_name, 'w') as out_file:
         out_file.writelines(newdata)
@@ -176,8 +182,13 @@ if __name__ == '__main__':
                           "    \usepackage{caption}\n"
             add_line(latexfile, in_line, line_to_add)
 
+            # Add usepacakage to .tex file header
+            in_line = "    \section"
+            line_to_add = "\\newpage\n"
+            add_line(latexfile, in_line, line_to_add, place='before')
+
             # Replace some strings to scale figures
-	    # and perform some corrections
+            # and perform some corrections
             old2new = {
                        "{fig/compile_interprete.png}":
                        "[width=17cm]{fig/compile_interprete.png}",
@@ -193,13 +204,7 @@ if __name__ == '__main__':
                        "\caption{\href{https://upload.wikimedia.org/"
                        "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
                        "260px-Tower_of_Hanoi_4.gif}"
-                       "{Cliquer ici pour la version animée}}\n",
-		       "section{": "section*{",
-                       "{matthieu.boileau@math.unistra.fr})\n"
-		       "\end{itemize}\n":
-                       "{matthieu.boileau@math.unistra.fr})\n"
-		       "\end{itemize}\n"
-		       "\\newpage\n"
+                       "{Cliquer ici pour la version animée}}\n"
                        }
 
             for old, new in old2new.iteritems():
