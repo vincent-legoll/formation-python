@@ -190,12 +190,12 @@ if __name__ == '__main__':
             # Replace some strings to scale figures
             # and perform some corrections
             old2new = {
-                       "{fig/compile_interprete.png}":
-                       "[width=17cm]{fig/compile_interprete.png}",
-                       "{fig/spyder.png}":
-                       "[width=17cm]{fig/spyder.png}",
-                       "{fig/meld.png}":
-                       "[width=17cm]{fig/meld.png}",
+                       #"{fig/compile_interprete.png}":
+                       #"[width=17cm]{fig/compile_interprete.png}",
+                       #"{fig/spyder.png}":
+                       #"[width=17cm]{fig/spyder.png}",
+                       #"{fig/meld.png}":
+                       #"[width=17cm]{fig/meld.png}",
                        "\includegraphics{https://upload.wikimedia.org/"
                        "wikipedia/commons/thumb/6/60/Tower_of_Hanoi_4.gif/"
                        "260px-Tower_of_Hanoi_4.gif}":
