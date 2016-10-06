@@ -7,7 +7,7 @@ Ce dépôt contient le matériel utilisé dans une formation d'initiation au lan
 - [Le langage 2/2](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/02-InitPython-langage.ipynb)
 - [Un microprojet](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/03-InitPython-microprojet.ipynb)
 
-# Notice d'utilisation des notebooks Python
+# Utilisation des notebooks Python
 
 ## Installation de Jupyter
 
