@@ -1,9 +1,17 @@
-# Petite notice d'utilisation des Notebooks Python
+# Contenu
+
+Ce dépôt contient le matériel utilisé dans une formation d'initiation au langage Python, en particulier quatre notebooks jupyter qui correspondent aux quatre parties du cours :
+
+- [Les généralités](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/00-InitPython-generalites.ipynb)
+- [Le langage 1/2](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/01-InitPython-langage.ipynb)
+- [Le langage 2/2](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/02-InitPython-langage.ipynb)
+- [Un microprojet](http://nbviewer.jupyter.org/github/fitzinger/formation-python/blob/master/03-InitPython-microprojet.ipynb)
+
+# Notice d'utilisation des notebooks Python
 
 ## Installation de Jupyter
 
-L'idéal est d'utiliser [Anaconda](http://jupyter.readthedocs.org/en/latest/install.html)
-que pouvez télécharger [ici](https://www.continuum.io/downloads).
+L'idéal est d'utiliser [Anaconda](http://jupyter.readthedocs.org/en/latest/install.html) téléchargeable [ici](https://www.continuum.io/downloads).
 Anaconda est une suite assez complète et facile à utiliser. Outre les notebooks Jupyter, Anaconda contient entre autres :
 
 - l'IDE [Spyder](https://github.com/spyder-ide/spyder)
